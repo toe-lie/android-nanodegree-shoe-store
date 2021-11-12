@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/brand_dark_orange</item>
+        <item name="colorPrimaryVariant">@color/brand_light_orange</item>
+        <item name="colorSecondary">@color/brand_dark_orange</item>
+        <item name="colorSecondaryVariant">@color/brand_light_orange</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FormInputLabelStyle">
+        <item name="android:textAppearance">?textAppearanceSubtitle2</item>
+    </style>
+
+</resources>
