@@ -42,25 +42,4 @@ class MainActivity : AppCompatActivity() {
   override fun onSupportNavigateUp(): Boolean {
     return findNavController().navigateUp() || super.onSupportNavigateUp()
   }
-
-  override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-    menuInflater.inflate(R.menu.logout, menu)
-    return true
-  }
-
-  override fun onOptionsItemSelected(item: MenuItem): Boolean {
-    val handled = NavigationUI.onNavDestinationSelected(item, findNavController())
-    if (!handled) {
-      when(item.itemId) {
-        R.id.action_logout -> {
-          doLogout()
-        }
-      }
-    }
-    return true
-  }
-
-  private fun doLogout() {
-    findNavController().graph = findNavController().graph
-  }
 }

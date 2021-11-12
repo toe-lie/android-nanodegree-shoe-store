@@ -67,13 +67,6 @@ class LoginFragment : BaseFragment() {
     )
   }
 
-  override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-    super.onCreateOptionsMenu(menu, inflater)
-    menu.findItem(R.id.action_logout)?.let {
-      it.isVisible = false
-    }
-  }
-
   override fun onDestroyView() {
     super.onDestroyView()
     _binding = null
