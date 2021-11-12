@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="viewModel"
             type="com.udacity.shoestore.ui.onboarding.welcome.WelcomeViewModel" />
     </data>
 
+    <!--
+      This screen can be laid out by either Constraint or Linear Layout.
+      I have decided to use ConstraintLayout because I would like to place the subtitle
+      in one third of the screen and layout with Constraint Layout's bias is a bit easier
+      than LinearLayout's weight.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -39,8 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_normal"
             android:layout_marginBottom="@dimen/margin_normal"
-            android:text="@string/button_text_next_with_arrow"
             android:onClick="@{() -> viewModel.onNextClicked()}"
+            android:text="@string/button_text_next_with_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertical_center_guideline" />

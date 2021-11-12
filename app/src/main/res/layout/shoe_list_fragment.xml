@@ -9,6 +9,10 @@
             type="com.udacity.shoestore.ui.shoelist.ShoeListViewModel" />
     </data>
 
+    <!--
+        This layout shows shoe list when data is available and shows empty view when data is empty.
+        We show only one child view group at a time and FrameLayout is good option.
+    -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,8 +33,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
+
         </ScrollView>
 
+        <!-- The layout is simply arrange widgets vertically and doesn't need to use ConstraintLayout -->
         <LinearLayout
             android:id="@+id/empty_view"
             android:layout_width="match_parent"

@@ -9,6 +9,13 @@
             type="com.udacity.shoestore.ui.onboarding.instruction.InstructionViewModel" />
     </data>
 
+    <!--
+        The layout decision for this screen is also the same as welcome_fragment.
+        This screen can be laid out by either Constraint or Linear Layout.
+        I have decided to use ConstraintLayout because I would like to place the title
+        in one third of the screen and layout with Constraint Layout's bias is a bit easier
+        than LinearLayout's weight.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,7 +30,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.32999998" />
+            app:layout_constraintVertical_bias="0.33" />
 
         <TextView
             android:id="@+id/instruction_1"
@@ -58,7 +65,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

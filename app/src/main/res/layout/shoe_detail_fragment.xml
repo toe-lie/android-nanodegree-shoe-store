@@ -13,6 +13,15 @@
         android:layout_height="match_parent"
         android:fillViewport="true">
 
+        <!--
+            The layout is simply arrange widgets vertically and doesn't need to use ConstraintLayout.
+
+            Note: If we use the ConstraintLayout, we don't need to use this nested LinearLayout
+            for two buttons.
+            But, with LinearLayout, we don't need to set id for all labels and
+            don't need to set the constraints for all just top down widgets.
+            So, I prefer LinearLayout to ConstraintLayout in this situation.
+        -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
